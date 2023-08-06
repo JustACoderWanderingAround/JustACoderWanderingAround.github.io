@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trains!!!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Title & Heading with nav bar-->
+    <div id="header">
+        <h1 id="pageTitle">Trains!!</h1>
+        <button class="hoverableh2" id="hamIcon">Menu</button>
+    </div>
+    <nav id="navbar">
+        <div class="fullBasis">
+        <h2>Menu</h2>
+            <ul id="menuList">
+                <li><button class="hoverableh2" id="page1btn">Types</button></li>
+                <li><button class="hoverableh2" id="page2btn">History</button></li>
+                <li><button class="hoverableh2" id="page3btn">Technical</button></li>
+                <li><button class="hoverableh2" id="page4btn">Quiz</button></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Intro window-->
+    <div id="intro">
+        <div class="halfBasis">
+            <h2>What are trains?</h2>
+            <p>Trains are a series of connected vehicles (often called carriages or wagons) connected together that run
+                along a railway track. They are generally used for the carriage of people and cargo across long
+                distances.</p>
+        </div>
+    </div>
+   
+    <div id="pageContainer">
+        <!-- Main homepage -->
+        <div class="page" id="page0">
+            <div class="flexHorBasis">
+                <div class="halfBasis">
+                    <img src="images/homebackground.jpg" alt="Alstom Movia R151" class="imgFullWidth">
+                    <p>Above: Singapore MRT Alstom Movia R151</p>
+                </div>
+                <div class="halfBasis">
+                    <h2 class="nonHoverableh2">Trains</h2>
+                    <p>There are many many things to learn about trains all over the world. Click on the various buttons
+                        on the navbar on top to learn more!</p><br>
+                    <p class="extra">To learn more about the way we categorize trains, click on "Types of Trains"
+                        !<br><br>
+                        To learn more about the history of trains, click on "History of Trains"<br><br>
+                        To learn more about the parts of trains, click on "Tehnical Details" !<br><br>
+                        To learn more about the impact of trains on the world, click on "Impact of Trains" !</p>
+                </div>
+            </div>
+        </div>
+        <!-- 1st page with types of trains -->
+        <div class="page" id="page1">
+            <!--1st row with text and image that describes types of trains.-->
+            <div class="flexHorBasis">
+                <div class="halfBasis">
+                    <h2 class="nonHoverableh2">Types of trains!</h2>
+                    <p>There are so many different ways to categorise and define trains. Lets take a look at what
+                        metrics we can use to do so.</p>
+                </div>
+                <div class="halfBasis">
+                    <img src="images/types.jpg" alt="types of trains!" class="imgFullWidth">
+                    <p class="extra">Above, clockwise from top left: LNER class A4 passenger Steam Locomotive, UK.<br>
+                        Union Pacific EMD SD70 freight diesel locomotive, US.<br>
+                        Tokyo Metro 18000 series passenger electric multiple unit, Japan<br>
+                        OBB Siemens ES64 "Taurus" electric passenger locomotive, Austria
+                    </p>
+                </div>
+            </div>
+            <!-- 2nd section that talks about varying uses-->
+            <div class="flexHorBasis">
+                <div class="halfBasis">
+                    <img src="images/usesoftrains.jpg" alt="varying types of trains, each with differenet uses"
+                        class="imgFullWidth">
+                </div>
+                <div class="halfBasis">
+                    <h2>Uses of trains</h2>
+                    <p>The first and most common way people distinguish trains is by the way they're used.<br>This is
+                        the easiest way to tell trains apart.<br>Generally speaking, the carriages that make up trains
+                        are purpose built.<br>
+                        This segment will go into some common uses of trains.<br>
+                        Click on the buttons below to start exploring!
+                    </p>
+                </div>
+            </div>
+            <div class="flexHorBasis">
+                <div class="threeQuarterBasis">
+                    <div class="tab">
+                        <button class="hoverableh2" onclick="openTab(event, 'freight')">Freight</button>
+                        <button class="hoverableh2" onclick="openTab(event, 'passenger')">Passenger</button>
+                        <button class="hoverableh2" onclick="closeAllTabs()">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flexHorBasis" id="useContainer">
+                <div class="flexHorBasis tabcontent" id="freight">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">Freight</h2>
+                        <h3>General characteristics</h3>
+                        <p>Freight refers to any goods or cargo transported by a vehicle.<br>
+                            The transport of goods (coal in particular) was the main reason why trains were even
+                            invented at all. <br>
+                            Trains allow for the efficient transport of a huge amount of goods from one place or
+                            another.
+                            Freight trains are generally made up of separated locomotives hauling unpowered
+                            purpose-built wagons so that the railway company has flexibility in allowing certain
+                            segments of the train to go to different places. <br>
+                            Freight trains are usually as long as the country's laws allow. In the United States, you
+                            can find freight trains of up to 4km long!
+                        </p>
+                    </div>
+                    <div class="halfBasis">
+                        <img src="images/eh500.jpg"
+                            alt="Japan Railways EH500 class locomotive hauling a container train." class="imgFullWidth">
+                        <p>Above: A JR Freight EH500 series locomotive hauling a container freight train.</p>
+                        <img src="images/class60.jpg" alt="British Railways class 60 locomotive hauling an oil train."
+                            class="imgFullWidth">
+                        <p>Above: A British Railways class 60 locomotive hauling an tanker train. Note the rounded shape
+                            of the cargo wagons and how they differ from the container wagons.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis" id="placeholder">
+                    <div class="fullBasis">
+                        <p>Click the buttons above to start exploring!</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis tabcontent" id="passenger">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">Passenger</h2>
+                        <p>After a few years of ferrying freight, engineers realised that the train could be an
+                            innovative solution for travel. <br>
+                            Passenger trains can either be made up of dedicated powered passenger cars, or dedicated
+                            unpowered passenger cars pulled by a locomotive. <br>
+                            Passenger cars tend to be sleeker and cleaner than freight cars because of the fact that
+                            people care about cleanliness standards, unlike cargo.
+                            These trains may also differ in design dependiong on operating conditions such as speed and service intensity.
+                        </p>
+                    </div>
+                    <div class="halfBasis">
+                        <img src="images/homebackground.jpg" alt="Singapore MRT R151 train" class="imgFullWidth">
+                        <p>Above: A Singapore MRT R151 train on a passenger service. Note how the train is sleeker and
+                            cleaner than the freight trains. Also note how all the carriages in the train are similar.
+                        </p>
+                        <img src="images/N700.jpg" alt="JR Central N700 Series Shinkansen" class="imgFullWidth">
+                        <p>Above: A JR Central N700 Series <i>Shinkansen</i> (bullet train). Bullet trains are a type of
+                            passenger train typically designed for longer distances and higher speeds.<br>Note how much
+                            sleeker the nose of the train is in comparison to the R151. This is to improve aerodynamic
+                            performance at high speeds, which is certainly useful given that this train travels at over
+                            300km/h!</p>
+                    </div>
+                </div>
+            </div>
+            <!--3rd row that talks about varying power sources.-->
+            <div class="flexHorBasis">
+                <!--Videos and images on the left side-->
+                <div class="halfBasis">
+                    <h2>Power Source</h2>
+                    <img src="images/powersource.jpg" alt="types of powersource" class="imgFullWidth">
+                    <details>
+                        <summary>Video of a steam train</summary>
+                        <div class="content">
+                            <p>Seen here is <a href="https://en.wikipedia.org/wiki/LNER_Class_A4_4464_Bittern"
+                                    target="_blank">British Railways no. 60019 "Bittern"</a><br> Note the "chug chug"
+                                sound produced by the steam escaping the pistons connected to the driving wheels.</p>
+                            <iframe src="https://www.youtube.com/embed/3Ez5og1iFU8"></iframe>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Video of a diesel train</summary>
+                        <div class="content">
+                            <p>Seen here is a JR Hokkaido <a href="https://en.wikipedia.org/wiki/KiHa_183_series"
+                                    target="_blank">KiHa 183 Series (-550 Subseries) diesel multiple unit</a> departing
+                                Asahikawa Station in Hokkaido, Japan. Note the roar of the diesel engine at 0:57 as the
+                                train departs.</p>
+                            <iframe src="https://www.youtube.com/embed/cr7G45fUaP8"></iframe>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Video of an electric train</summary>
+                        <div class="content">
+                            <p>Seen here is a <a href="https://en.wikipedia.org/wiki/DBAG_Class_425"
+                                    target="_blank">Deutsche Bahn Class 425</a>. Note the whirring sound from the
+                                elctric motors when the train accelerates and decelerates, and the lack of any loud
+                                roaring or revving when the train is stopped. Also note the pantograph power collector
+                                sticking out from the top of the train, making contact with the overhead wires. This is
+                                how the train gets electricity for power.
+                            </p>
+                            <iframe src="https://www.youtube.com/embed/2Av2Hv9wxvI"></iframe>
+                        </div>
+                    </details>
+                </div>
+                <!--Explanations on the right side-->
+                <div class="halfBasis">
+                    <p>The second type of metric people can use to distinguish between types of trains is their power
+                        source. <br>
+                        Types of power sources may vary due to different operator requirements, such as cost, or the
+                        type of
+                    </p>
+                    <details>
+                        <summary>Types of power sources</summary>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <h3>Steam</h3>
+                                    <p>The oldest of the power sources, steam powered trains use compressed steam to
+                                        drive pistons that produce rotational motion, that is then sent to the wheels.
+                                        The trains are equipped with a boiler filled with water, which is heated using
+                                        an onboard fire to produce the steam.<br>
+                                        Steam power was most used pre - World War 2 when engine technology wasn't
+                                        developed enough to handle the loads required to pull large trains. As
+                                        technology evolved in the 1950s, trains gradually began to switch to diesel
+                                        engined propulsion due to its efficiency and cost-effectiveness.
+                                    </p>
+                                    <details>
+                                        <summary>More info</summary>
+                                        <div class="content">
+                                            <p>Some examples of the steam trains include the <a
+                                                    href="https://en.wikipedia.org/wiki/Union_Pacific_Big_Boy"
+                                                    target="_blank">Union Pacific Big Boy</a> and the <a
+                                                    href="https://en.wikipedia.org/wiki/JNR_Class_D51"
+                                                    target="_blank">JNR Class D51</a></p>
+                                        </div>
+                                    </details>
+                                </li>
+                                <li>
+                                    <h3>Diesel</h3>
+                                    <p>The second of the power sources, diesel powered trains use the energy generated
+                                        by a diesel engine to move forward.</p>
+                                    <details>
+                                        <summary>More info</summary>
+                                        <div class="content">
+                                            <p>Diesel trains accomplish this in various ways. Some trains, connect the
+                                                engine directly to the wheels with a mechanical (such as in the case of
+                                                the <a href="https://en.wikipedia.org/wiki/British_Rail_Class_331"
+                                                    target="_blank">British Rail Class 331</a>) or hydraulic (such as in
+                                                the <a href="https://en.wikipedia.org/wiki/JNR_Class_DD51"
+                                                    target="_blank">JNR Class DD51</a>) transmission, allowing the train
+                                                to use the engine for power directly.<br>
+                                                In addition, some trains (such as the <a
+                                                    href="https://en.wikipedia.org/wiki/EMD_SD70_series"
+                                                    target="_blank">EMD SD70</a>, <a
+                                                    href="https://en.wikipedia.org/wiki/HC85_series" target="_blank">JR
+                                                    HC85 series</a>) convert the diesel power into an electric charge
+                                                used to power an electric motor. These trains are categorised as
+                                                "diesel-electric."
+                                            </p>
+                                        </div>
+                                    </details>
+                                </li>
+                                <li>
+                                    <h3>Electric</h3>
+                                    <p>Electric trains use electric power collected either from the power grid to make a
+                                        motor spin, moving the train forward. </p>
+                                    <details>
+                                        <summary>More info</summary>
+                                        <div class="content">
+                                            <p>There are several methods in which electric trains collect power from the
+                                                grid. <br>
+                                                The first is the use of a "3rd rail", an electrified metal rail that
+                                                carries an electric charge that the train picks up using a so-called
+                                                "shoe." This system is used mostly on metros, such as (most of) the <a
+                                                    href="https://en.wikipedia.org/wiki/Mass_Rapid_Transit_(Singapore)"
+                                                    target="_blank">Singapore MRT</a>, <a
+                                                    href="https://en.wikipedia.org/wiki/London_Underground"
+                                                    target="_blank">London Underground</a> and <a
+                                                    href="https://en.wikipedia.org/wiki/New_York_City_Subway"
+                                                    target="_blank">New York City Subway.</a><br>
+                                                The second method is the use of an overhead wire. Similar to the third
+                                                rail, an electric charge flows through the wire and the train picks it
+                                                up using a "catenary" that is constantly in contact with the wire. This
+                                                method is used mostly for railways with higher speed, such as bullet
+                                                train systems like the <a
+                                                    href="https://en.wikipedia.org/wiki/Shinkansen"
+                                                    target="_blank">Shinkansen in Japan</a> and <a
+                                                    href="https://en.wikipedia.org/wiki/TGV">France's TGV.</a>
+                                            </p>
+                                        </div>
+                                    </details>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="flexHorBasis">
+                <div class="halfBasis">
+                    <h2>Configuration</h2>
+                    <p>There are 2 main types of train configurations: multiple unit and locomotive hauled trains.<br>
+                        In a locomotive hauled train, all traction-related equipment (basically anything that allows the train to move) is concentrated into 1 single carriage of the train. <br>
+                        The driver sits in this carriage and controls the whole train from it. <br>
+                        The rest of the train contains no means for the driver to control it, besides the brakes.<br>
+                        This arragement is generally more flexible to run as the company can pick and choose where each individual train car and locomotive can go.
+                    </p>
+                    <br><br><br>
+                    <p>In a multiple-unit type train has the same power and traction equipment as a locomotive hauled train, but instead of having all of the traction equipment in 1 carriage, it is spread all throughout the carriages of the train.<br>
+                    The carriages of these trains are often semi-permanently coupled together as these carraiges many only propel themselves when coupled together. <br>
+                    Not all all carriages of a multiple unit train need to have motors. Some may carry auxiliary equipment such as air compressors and batterys etc. <br>
+                    Virtually all rapid transit lines use multiple-unit trains, including the Singapore MRT and LRT.
+                </div>
+                <div class="flexBasis">
+                    <img src="images/Class68.jpg" alt="Class68" class="imgFullWidth">
+                    <p>Seen here is a British Rail Class 68 locomotive hauling a passenger train. Note how different the locomotive looks from the carriages it is pulling. The Class 68 contains all the components needed to move the train forward (engine, motors etc) and the carriages are simply pulled along.</p>
+                    <img src="images/homebackground.jpg" alt="R151" class="imgFullWidth"> 
+                    <p>Seen here is a Singapore MRT R151 multiple-unit train. Note how the train looks very similar throughout its entire length. Since it is a multiple unit train, the traction equipment of the train is spread throughout. The lead and rear cars contain no traction motors and driving cabs, while the middle 4 cars have the motors with no driving cab.</p>
+                </div> 
+            </div>
+        </div>
+        <!-- 2nd page with history of trains-->
+        <div class="page" id="page2">
+            <section class="flexBasis">
+                <div class="halfBasis">
+                    <h2 class="nonHoverableh2">History of trains</h2>
+                    <p>Trains have had a colorful ~220 year history. <br>They were invented out of a need to increase
+                        efficiency in transporting big loads across varying distances. <br>All throughout history,
+                        engineers across time and across the world have been seeking to improve the efficiency of the
+                        train. <br>This section will discuss the long and colorful history of trains, as well as rail
+                        transport in general.<br>
+                        There are several eras in the history of the humble train, lets go through them together.
+                    </p>
+                </div>
+            </section>
+            <section class="hidden" id="presteam">
+                <div class="flexHorBasis"> 
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Beginning: Railways before steam.</h2>
+                        <p>In 1515, a cardinal named Matthaus Lang described a funicular railway in Austria's Hohensalzburg Fortress.<br>
+                            This railway used human and animal power, and the cars were pulled along with a rope.<br>
+                            This is one of the earliest descriptions of any form of rail transport in history.<br>
+                            You can learn about the Reisszug here: 
+                            <a href="https://en.wikipedia.org/wiki/Reisszug" target="_blank">Read the Wikipedia article here</a></p>
+                    </div>
+                    <div class="halfBasis">
+                        <!--Sourced from https://en.wikipedia.org/wiki/Reisszug#/media/File:Reiszug,_Hohensalzburg.jpg-->
+                        <img src="images/Reiszug,_Hohensalzburg.jpg" class="imgHalfWidth" alt="Image of the Reisszug. Sourced from:https://en.wikipedia.org/wiki/Reisszug#/media/File:Reiszug,_Hohensalzburg.jpg">
+                        <p>The Reisszug.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <!--Sourced from https://en.wikipedia.org/wiki/File:National_museum_of_Karelia_(1).jpg-->
+                        <img src="images/KareliaRailway.jpg" class="imgHalfWidth" alt="Image of the Alexandrovsky Plant's railway in the Karelia Museum">
+                        <p>This is an example of an early cast-iron railway. This particular track segment is from the Alexandrovsky Plant's railway. It is currently exhibited in the Karelia Musem in Russia.</p>
+                        
+                    </div>
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Beginning: Forged from Steel.</h2>
+                        <p>In the 1700s, there was an uptick in iron production in Britain because of the introduction to steam-powered blast furnaces. <br>
+                            As a result, the Coalbrookdale company was able to fix plates of cast iron onto the wooden rails of their railway. This significantly improved the carrying capacity of their railway and improved productivity.<br>
+                            This started an era of iron-tracked railways all over Europe. <br>
+                            The discovery of the Bessemer process enabled steel to be made inexpensively. This led to the great expansion of the railways.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="steam">
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Age of Steam - Part 1: The beginnings.</h2>
+                        <p>Things really heated up in the 1800s. In 1804, British Engineer Richard Trevithick invented the world's first working full-scale steam locomotive. It used high pressure steam to drive the train forward using a series of gears connected to the wheels. Despite revolutionising the railways, the locomotive itself never made it beyond the experimental stage.</p>     
+                    </div>
+                    <div class="halfBasis">
+                        <!--Sourced from https://en.wikipedia.org/wiki/File:TrevithicksEngine.jpg-->
+                        <img src="images/TrevithicksEngine.jpg" alt="Trevithick's Engine." class="imgFullWidth">
+                        <p>Above: A picture of Treviththick's Engine.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Age of Steam - Part 2: A meteoric rise</h2>
+                        <p>Throughout the next 100 years, steam-powered railways began to pop up and expand all over the world.<br>
+                            Some notable railway lines built include the <a href="https://en.wikipedia.org/wiki/East_Coast_Main_Line" target="_blank">East Coast Main Line</a> in the UK, which was completed in the 1840s which connects the cities of London and Edinburgh across 393 miles (632km) of track,<br>
+                            the <a href="https://en.wikipedia.org/wiki/First_transcontinental_railroad" target="_blank">Overland Route</a> in the US, which was completed in the 1860s and connects the cities of San Francisco and Omaha across 1,911 miles  (3,075km) of track, <br>
+                            and the <a href="https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_Main_Line" target="_blank">Tokaido Main Line</a> in Japan, which was completed in the 1890s and connects the cities of Tokyo and Kobe across 589.5km (366.3 miles) of line.<br>
+                            These lines later became the backbones of their respective national networks.<br>
+                            The point is that the mid to late 1800s were the start of a "golden age" of rail travel, as can be seen by the meteoric growth of rail lines all over the world.<br>
+                            This was not limited to intercity railways, either. Some of the world's most famous city subway systems began popping up during this period too. Examples include the <a href="https://en.wikipedia.org/wiki/New_York_City_Subway" target="_blank">New York City Subway</a> and <a href="https://en.wikipedia.org/wiki/London_Underground" target="_blank">The London Underground.</a>
+                        </p>
+                    </div>
+                    <div class="halfBasis">
+                        <img src="images/LNERAzuma.jpg" class="imgFullWidth" alt="An LNER train plying the East Coast Main Line today.">
+                        <p>Above: a London Northeastern Railway express passenger train plies the East Coast Main Line of today.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="steam2">
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Age of Steam - Part 3: Speed and Power!</h2>
+                        <p> The 1920s and 1940s was when rail travel was arguably at its peak.<br>
+                            Service across the world was at an all time high, and the train was the preferred method of transport for all, regardless of financial status. <br>
+                            This era also saw huge leaps in technology, with the invention of high-pressure steam boilers which allowed the steam trains of the time to travel at great speeds, with the UK's A4 class locomotive, named "Mallard", hitting a breakneck speed of 126 miles per hour (206km/h) in 1938, a record that it holds to this day.<br>
+                            The German Railways had attempted several to out-speed the British, with trains such as the <a href="https://en.wikipedia.org/wiki/DRG_Class_SVT_877" target="_blank">Flying Hamburger.</a><br>
+                            This marked the end of a several year long competition with the Germans, who had shifted their priorities from out-doing the English in railway tecnology to invading the whole of Eastern Europe, kickstarting World War Two.
+                        </p>
+                    </div>
+                    <div class="halfBasis">
+                        <!--Sourced from: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bundesarchiv_Bild_102-14151%2C_%22Fliegender_Hamburger%22%2C_DRG_778.jpg/300px-Bundesarchiv_Bild_102-14151%2C_%22Fliegender_Hamburger%22%2C_DRG_778.jpg-->
+                        <img src="images/FlyingHamburger.jpg" class="imgFullWidth" alt="The Flying Hamburger">
+                        <p>Above: The "Flying Hamburger.", picture dated 1937.</p>
+                         <!--Sourced from: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bundesarchiv_Bild_102-14151%2C_%22Fliegender_Hamburger%22%2C_DRG_778.jpg/300px-Bundesarchiv_Bild_102-14151%2C_%22Fliegender_Hamburger%22%2C_DRG_778.jpg-->
+                         <img src="images/Mallard.jpg" class="imgFullWidth" alt="Mallard">
+                         <p>Above: The "Mallard" on display.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Age of Steam - Part 4: Wartime Woes</h2>
+                        <p> Then everything changed when Nazi Germany attacked. <br>
+                            The Second World War put an abrubt stop to the monumental advances in railway technology. Despite this, the war had many impacts on the future of rail travel.<br>
+                            Most of the railway infrastructure in countries affected by the war was destroyed by aerial bombardment. This set back any technological progress made over the years. <br>
+                        </p>
+                    </div>
+                    <div class="halfBasis">
+                        <!--Sourced from: https://upload.wikimedia.org/wikipedia/commons/4/47/St_Pancras_railway_station_bomb_damage_in_May_1941.jpg-->
+                        <img src="images/StPancras1941.jpg" alt="London St Pancras Station, 1941" class="imgFullWidth">
+                        <p>Above: A picture of London's St Pancras Station, dated 1941. The station was targetted by Germans during their bombing campaign of the UK in the early stages of the war.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="poststeam1"> 
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Modern Era - Part 1: The early postwar era.</h2>
+                        <p>Following the end of the war, many of the world's railways were in shambles. However, this gave the governments of their countries a chance to start anew. <br>
+                        This, however, was not the path that most of them took. Instead of re-building the railways, most governments opted instead to expand their road networks.<br> 
+                        In addition to this, the advent of the jet airliner encouraged governments to invest in airlines instead of the railways. <br>
+                        This siphoned most of the railway traffic away to the roads and the skies.
+                        </p>
+                    </div>
+                    <div class="halfBasis">
+                        <!--Taken from https://aipetcher.files.wordpress.com/2010/01/m1-motorway.jpg?w=450&h=330-->
+                        <img src="images/m1-motorway.jpg" alt="The UK's M1 Motorway" class="imgFullWidth">
+                        <p>Above: The UK's M1 Motorway. This motorway directly contributed to a decrease in ridership to the East Coast Main Line, of which it runs parralel to. Seen in the background is a Class 86 locomotive pulling a passenger service.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="poststeam2">
+                <div class="flexHorBasis">
+                    <div class="halfBasis">
+                        <h2 class="nonHoverableh2">The Modern Era - Part 2: Rail Rises Again.</h2>
+                        <p>Things changed again, this time thanks to the Japanese.<br>
+                        On the 1st of October 1964, the first ever <i>Shinkansen</i> (bullet train) service ran from Tokyo to Osaka. It covered the 515km journey in four hours, down from the 6hour 40minute journey that conventional trains took. <br>
+                        This was a massive improvement in journey time. However, that wasn't all. By the next year, the journey only took 3 hours 10 minutes, owing to an increase in track speed limits.<br>
+                        The world went into a frenzy after seeing what the Shinkansen had achieved. In the following decades, countries from all over the world began to develop their own form of high speed rail.<br>
+                        This resulted in the German <a href="https://en.wikipedia.org/wiki/Intercity_Express" target="_blank">Intercity Express</a> and the French <a href="https://en.wikipedia.org/wiki/TGV" target="_blank">TGV</a>, as well as the railways that rely on technology developed by these 2 railways.<br>
+                        This brings us to today. Rail travel is growing, with increasing passenger numbers year on year. As technology evolves, trains will go further, faster. Magnetic levitation (Maglev) Trains that can go over 500 km/h are already in their testing phase, and the first maglev line is slated for completion in 2027. <br>
+                        Suitably enough, the line is being built in Japan, the very same country that built the innovative shinkansen all those years ago. The very same country that helped make rail rise again.
+                        </p>  
+                    </div>
+                    <div class="halfBasis">
+                        <img src="images/0Series.jpg" alt="0 Series" class="imgFullWidth">
+                        <p>Above: The 0 Series Shinkansen. This was the first ever type of train used on the Shinkansen lines. It had a top speed of 220km/h and sat up to 1,300 people.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 3rd page with technical details of trains-->
+        <div class="page" id="page3">
+            <div class="flexHorBasis">
+                <div class="fullBasis">
+                    <h2 class="nonHoverableh2">Technical Details</h2>
+                    <p>Trains are complex mechanical marvels with many complicated parts. This section will explore the various parts of a typical train. Because of the fact that the presence of some train parts will vary wildly depending on the type of train, we've decided to stick to some generally found parts on a train.</p>
+                </div>
+            </div>
+            <div class="flexHorBasis">
+                <div class="threeQuarterBasis">
+                    <div class="tab">
+                        <button class="hoverableh2" onclick="openTab(event, 'bogie')">Bogie</button>
+                        <button class="hoverableh2" onclick="openTab(event, 'couplers')">Couplers</button>
+                        <button class="hoverableh2" onclick="openTab(event, 'cab')">Cab</button>
+                        <button class="hoverableh2" onclick="closeAllTabs()">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flexHorBasis" id="partsContainer">
+                <div class="flexHorBasis tabcontent" id="bogie">
+                    <div class="halfBasis">
+                        <img src="images/bogie.jpg" alt="bogie" class="imgFullWidth">
+                    </div>
+                    <div class="halfBasis">
+                        <h2>Bogies</h2>
+                        <p>Bogies are modular framework that carries the wheels, axles, and any related equipment (brakes, motors etc) on a train. It is mounted on the undercarriage, which is below the main carriage of the train.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis tabcontent" id="couplers">
+                    <div class="halfBasis">
+                        <img src="images/trainCoupler.jpg" alt="coupler" class="imgFullWidth">
+                    </div>
+                    <div class="halfBasis">
+                        <h2>Couplers</h2>
+                        <p>Couplers are mechanisms typically placed at either end of a rail vehicle that connects them together, allowing them to form a train.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis tabcontent" id="cab">
+                    <div class="halfBasis">
+                        <img src="images/trainCab.jpg" alt="cab" class="imgFullWidth">
+                    </div>
+                    <div class="halfBasis">
+                        <h2>The Cab</h2>
+                        <p>The cab is where the train driver sits. It contains all necessary controls needed to drive the train, such as the throttle and brake handles, the reverser (which determines direction of travel), the horn, and any relevant safety systems required.</p>
+                    </div>
+                </div>
+                <div class="flexHorBasis" id="pplaceholder">
+                    <div class="fullBasis">
+                        <p>Click any of the buttons to find out more about train parts!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <div class="flexHorBasis">
+                <div class="fullBasis">
+                    <h2 class="nonHoverableh2">Quiz time!</h2>
+                    <p>Can YOU answer these awesome questions about trains correctly? Let's fine out :)</p>
+                </div>
+            </div>
+            <div class="flexHorBasis">
+                <div class="halfBasis" id="quiz">
+                </div>
+                <div class="halfBasis" id="results">
+                </div>
+                <button class="hoverableh2" id="submit">Submit your answers.</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="flexBasis">
+            <button class="hoverableh2" id="page0btn">Back to home</button>
+        </div>
+    </footer>
+</body>
+</html>
