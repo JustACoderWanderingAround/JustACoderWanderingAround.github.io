@@ -1,4 +1,4 @@
-alert("remove me before submission, remember to enable hideall and show for pages");
+
 
 // set up constants
 var currentPage = 0;
