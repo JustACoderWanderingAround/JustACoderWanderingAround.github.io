@@ -1,5 +1,3 @@
-
-
 // set up constants
 var currentPage = 0;
 
